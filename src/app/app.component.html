@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+<nav class="navbar  bg-dark px-3 mb-4">
+  <div class="container-fluid login-page" >
+    <div class="">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+    </div>
+    <div class="">
+      <span class="" style="color: yellow;">Math Quiz Game</span>
+    </div>
+    <div class="">
+      <a *ngIf="!isAuthenticated()" class="nav-item nav-link" routerLink="/login">Login</a>
+      <span *ngIf="isAuthenticated()" class="navbar-text text-light me-3 d-none d-md-inline">
+        Hello, {{ getUserFullName() }}
+      </span>
+      <button *ngIf="isAuthenticated()" class="btn btn-link nav-item nav-link" style="color: rgb(50, 65, 221);" (click)="onLogout()">Logout</button>
+    </div>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,77 @@
+/* styles.css or your component's CSS file */
+
+.home-container{
+    padding: 20px;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding-inline: 10px;
+  }
+  .navbar-brand{
+    height: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .navbar a.active {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Define keyframes for rainbow effect */
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+  
+    16.666% {
+      color: orange;
+    }
+  
+    33.333% {
+      color: yellow;
+    }
+  
+    50% {
+      color: green;
+    }
+  
+    66.666% {
+      color: blue;
+    }
+  
+    83.333% {
+      color: indigo;
+    }
+  
+    100% {
+      color: violet;
+    }
+  }
+  
+  /* Apply rainbow animation to rainbow-text class */
+  .rainbow-text {
+    animation: rainbow 5s infinite;
+    /* Adjust duration and timing as needed */
+  }
+  
+  .login-page{
+    /* background-color: yellow;
+    height: 100%; */
+  }
